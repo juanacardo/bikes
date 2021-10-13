@@ -1,0 +1,22 @@
+.promo {
+  background-color: $dark-gray;
+  background-image: url("img/first_screen_desktop.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("img/first_screen_desktop@2x.jpg");
+  }
+}
+.promo__title {
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 64px;
+  letter-spacing: -0.005em;
+  color: $white;
+}
+.promo p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.005em;
+  color: rgba($white, 0.8);
+}

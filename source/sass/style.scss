@@ -1,4 +1,3 @@
-
 /* Global */
 
 @import "global/normalize.scss";
@@ -8,3 +7,13 @@
 @import "global/mixin.scss";
 
 /* Blocks */
+@import "blocks/page.scss";
+@import "blocks/main-navigation.scss";
+@import "blocks/promo.scss";
+@import "blocks/form.scss";
+@import "blocks/about-us.scss";
+@import "blocks/bike-types.scss";
+@import "blocks/slider.scss";
+@import "blocks/video.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";

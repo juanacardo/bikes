@@ -1,0 +1,26 @@
+.about-us__list {
+  display: flex;
+}
+
+.about-us__item {
+  &::before {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -1.28px;
+    color: $mint;
+    display: block;
+  }
+}
+.about-us__item--01::before {
+  content: "01";
+}
+.about-us__item--02::before {
+  content: "02";
+}
+.about-us__item--03::before {
+  content: "03";
+}
+.about-us__item--04::before {
+  content: "04";
+}

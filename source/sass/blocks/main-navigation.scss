@@ -1,0 +1,14 @@
+.main-navigation__list {
+  display: flex;
+  border-bottom: 1px solid rgba($white, 0.2);
+}
+.main-navigation__link {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.005em;
+  color: rgba($white, 0.7);
+  text-decoration: none;
+  padding-top: 21px;
+  padding-bottom: 9px;
+}

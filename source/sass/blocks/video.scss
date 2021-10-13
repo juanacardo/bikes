@@ -1,0 +1,31 @@
+.video {
+  background-color: $background-dark;
+}
+.video h2 {
+  color: $white;
+}
+.video p {
+  font-weight: 300;
+font-size: 16px;
+line-height: 28px;
+letter-spacing: -0.005em;
+color: rgba($white, 0.7);
+}
+.video__wrapper {
+position: relative;
+}
+.video__button {
+  background-color: $mint;
+  width: 65px;
+  height: 65px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
