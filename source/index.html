@@ -14,34 +14,36 @@
 <body class="page">
   <div class="page__wrapper">
     <header class="page-header">
-      <div class="container">
-        <nav class="main-navigation">
-          <ul class="main-navigation__list clear-list">
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="#about-us">О нас</a>
-            </li>
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="#bike-types">Виды велосипедов</a>
-            </li>
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="#video">Видео про велосипеды</a>
-            </li>
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="#contacts">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-navigation__list clear-list">
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#about-us">О нас</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#bike-types">Виды велосипедов</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#video">Видео про велосипеды</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
     </header>
+
     <main>
       <section class="promo">
-        <div class="container">
-          <div class="promo__wrapper">
-            <a>
+        <div class="promo__body">
+          <div class="promo__text-wrapper">
+            <a class="promo__logo">
               <img class="logo" src="img/logo.svg" alt="Логотип интернет-магазина Moon" width="68" height="20">
             </a>
             <h1 class="promo__title">Мы продаем велосипеды</h1>
-            <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+            <p>Наш магазин отбирает только самые <br class="promo__desctop-br">лучшие<br class="promo__tablet-br"> велосипеды для продажи</p>
           </div>
           <div class="promo__form-wrapper">
             <form class="form" action="https://echo.htmlacademy.ru" method="GET" name="contacts-form">
@@ -81,8 +83,8 @@
                   <source media="(min-width: 1024px)"
                     srcset="img/bike_types_1_desktop.webp 1x, img/bike_types_1_desktop@2x.webp 2x">
                   1х: 342px; 2x: 684px -->
-                  <img src="img/bike_types_1_desktop.jpg"
-                    alt="Дорожный велосипед с корзиной у руля, на фоне кирпичной стены" width="342" height="503">
+                <img src="img/bike_types_1_desktop.jpg"
+                  alt="Дорожный велосипед с корзиной у руля, на фоне кирпичной стены" width="342" height="503">
                 <!-- </picture> -->
                 <p>Дорожный велосипед</p>
               </a>
@@ -97,8 +99,8 @@
                   <source media="(min-width: 1024px)"
                     srcset="img/bike_types_2_desktop.webp 1x, img/bike_types_2_desktop@2x.webp 2x">
                   1х: 342px; 2x: 684px -->
-                  <img src="img/bike_types_2_desktop.jpg" alt="Горный велосипед на скале на фоне горной гряды" width="342"
-                    height="566">
+                <img src="img/bike_types_2_desktop.jpg" alt="Горный велосипед на скале на фоне горной гряды" width="342"
+                  height="566">
                 <!-- </picture> -->
                 <p>Горный велосипед</p>
               </a>
@@ -113,9 +115,9 @@
                   <source media="(min-width: 1024px)"
                     srcset="img/bike_types_3_desktop.webp 1x, img/bike_types_3_desktop@2x.webp 2x">
                   1х: 342px; 2x: 684px -->
-                  <img src="img/bike_types_3_desktop.jpg"
-                    alt="Детский велосипед с дополнительным сиденьем на багажнике и корзиной у руля розового цвета"
-                    width="342" height="513">
+                <img src="img/bike_types_3_desktop.jpg"
+                  alt="Детский велосипед с дополнительным сиденьем на багажнике и корзиной у руля розового цвета"
+                  width="342" height="513">
                 <!-- </picture> -->
                 <p>Детский велосипед</p>
               </a>
@@ -133,7 +135,7 @@
               <source media="(max-width: 1023px)" srcset="img/poster_tablet.webp 1x, img/poster_tablet@2x.webp 2x">
               <source media="(min-width: 1024px)" srcset="img/poster_desktop.webp 1x, img/poster_desktop@2x.webp 2x">
               1х: 929px; 2x: 1858px -->
-              <img src="img/video_poster_desktop.jpg" alt="Черный велосипед с изогнутым рулем" width="929" height="522">
+            <img src="img/video_poster_desktop.jpg" alt="Черный велосипед с изогнутым рулем" width="929" height="522">
             <!-- </picture> -->
             <button class="video__button" type="button" aria-label="Запустить видео">
               <svg width="14" height="19" viewBox="0 0 14 19" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
@@ -153,9 +155,9 @@
             <source media="(max-width: 1023px)" srcset="img/map_tablet.webp 1x, img/map_tablet@2x.webp 2x">
             <source media="(min-width: 1024px)" srcset="img/map_desktop.webp 1x, img/map_desktop@2x.webp 2x">
             1х: 929px; 2x: 1858px -->
-            <img src="img/map_desktop.jpg"
-              alt="Карта Санкт-Петербурга с указанием местоположения магазина на ул. Большая Конюшенная, д. 19"
-              width="957" height="530">
+          <img src="img/map_desktop.jpg"
+            alt="Карта Санкт-Петербурга с указанием местоположения магазина на ул. Большая Конюшенная, д. 19"
+            width="957" height="530">
           <!-- </picture> -->
         </div>
       </section>
@@ -168,6 +170,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

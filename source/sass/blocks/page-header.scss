@@ -1,0 +1,15 @@
+.page-header {
+  position: absolute;
+  box-sizing: border-box;
+  max-width: 1166px;
+  width: 100%;
+  margin: 0 auto;
+  padding-right: 146px;
+  padding-left: 146px;
+
+  @media (max-width: $tablet-width) {
+    position: static;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

@@ -1,37 +1,70 @@
+.form__legend {
+  margin-bottom: 17px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 29px;
+  }
+}
 .form__legend p {
   font-weight: 600;
-font-size: 17px;
-line-height: 28px;
+  font-size: 17px;
+  line-height: 28px;
   color: $white;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    letter-spacing: 0.005em;
+    color: $black;
+  }
 }
 .form input {
+  box-sizing: border-box;
   border: none;
-  cursor: pointer;
   border-radius: 6px;
 }
+.form__input {
+  margin-bottom: 20px;
+}
 .form__input input {
+  width: 100%;
   background-color: $white;
-  border: 1px solid input-border;
-  padding-top: 14px;
-  padding-right: 29px;
-  padding-bottom: 10px;
+  border: 1px solid $input-border;
+  padding-top: 10px;
+  padding-right: 14px;
+  padding-bottom: 12px;
   padding-left: 29px;
 
   &::placeholder {
     font-size: 15px;
-line-height: 24px;
-color: rgba($dark-gray, 0.5);
+    line-height: 24px;
+    color: rgba($dark-gray, 0.5);
+    opacity: 1;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 18px;
+    padding-bottom: 13px;
+    padding-left: 22px;
   }
 }
 .form__submit input {
   font-weight: 600;
-font-size: 15px;
-line-height: 21px;
-color: $black;
-background-color: $mint;
-display: flex;
-align-items: center;
-text-align: center;
-padding-right: 48px;
-padding-left: 48px;
+  font-size: 15px;
+  line-height: 21px;
+  color: $black;
+  background-color: $mint;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-top: 15px;
+  padding-right: 48px;
+  padding-bottom: 15px;
+  padding-left: 48px;
+  cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    padding-right: 52px;
+    padding-left: 52px;
+  }
 }
