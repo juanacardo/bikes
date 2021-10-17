@@ -1,25 +1,55 @@
+.page-footer__body {
+  display: flex;
+  justify-content: center;
+  padding-top: 19px;
+  padding-bottom: 75px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 2px;
+    padding-bottom: 53px;
+  }
+}
 .page-footer__link {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: rgba($black, 0.5);
   text-decoration: none;
+  margin-right: 90px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
 }
 .page-footer__link--email {
+  letter-spacing: 0.025em;
+
   &::before {
     content: "";
     width: 26px;
     height: 20px;
     display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
     background-image: url("../img/email.svg");
   }
 }
 .page-footer__link--tel {
+  padding-right: 18px;
+
+  @media (max-width: $tablet-width) {
+    padding-right: 14px;
+  }
+
   &::before {
     content: "";
     width: 22px;
     height: 23px;
     display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
     background-image: url("../img/phone.svg");
   }
 }
