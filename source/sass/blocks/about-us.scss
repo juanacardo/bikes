@@ -6,6 +6,11 @@
     padding-top: 20px;
     padding-bottom: 68px;
   }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 23px;
+    padding-bottom: 80px;
+  }
 }
 .about-us__title {
   margin-bottom: 50px;
@@ -13,18 +18,30 @@
   @media (max-width: $tablet-width) {
     margin-bottom: 29px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 31px;
+  }
 }
 .about-us__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  row-gap: 40px;
   column-gap: 40px;
 
   @media (max-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
-    row-gap: 40px;
     padding-right: 71px;
     padding-left: 71px;
+  }
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr;
+    padding-right: 0;
+    padding-left: 0;
+    column-gap: 0;
+    row-gap: 39px;
   }
 }
 .about-us__item {
@@ -42,6 +59,10 @@
 
     @media (max-width: $tablet-width) {
       margin-bottom: 19px;
+    }
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 14px;
     }
   }
 }

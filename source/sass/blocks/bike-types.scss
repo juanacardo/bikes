@@ -7,6 +7,10 @@
     padding-top: 51px;
     padding-bottom: 20px;
   }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 11px;
+  }
 }
 .bike-types__title {
   margin-bottom: 49px;

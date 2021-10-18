@@ -9,12 +9,14 @@
   <meta name="description" content="Наш магазин отбирает только самые лучшие велосипеды для продажи">
   <meta name="keywords" content="Велосипед, продажа велосипедов, магазин, байк, горный велосипед, детский велосипед">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="../fonts/open-sans-v26-cyrillic-ext-regular.woff" type="font/woff" as="font" crossorigin>
+  <link rel="preload" href="../fonts/open-sans-v26-cyrillic-ext-regular.woff2"type="font/woff2" as="font" crossorigin>
 </head>
 
 <body class="page">
   <div class="page__wrapper">
     <header class="page-header">
-
+      <!-- main-navigation--closed класс закрывает меню, main-navigation--opened класс открывает меню, main-navigation--nojs - работоспособность при отключенном JS -->
       <nav class="main-navigation main-navigation--closed main-navigation--nojs">
         <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-navigation__list clear-list">
@@ -43,7 +45,8 @@
               <img class="logo" src="img/logo.svg" alt="Логотип интернет-магазина Moon" width="68" height="20">
             </a>
             <h1 class="promo__title">Мы продаем велосипеды</h1>
-            <p>Наш магазин отбирает только самые <br class="promo__desctop-br">лучшие<br class="promo__tablet-br"> велосипеды для продажи</p>
+            <p>Наш магазин отбирает только самые <br class="promo__desctop-br">лучшие<br class="promo__tablet-br">
+              велосипеды для продажи</p>
           </div>
           <div class="promo__form-wrapper">
             <form class="form" action="https://echo.htmlacademy.ru" method="GET" name="contacts-form">
@@ -76,17 +79,15 @@
             <li class="slider__item slider__item--ellipse">
               <a class="slider__link" href="#">
                 <div class="slider__img-wrapper">
-                  <!-- <picture>
-                    <source media="(max-width: 767px)"
-                      srcset="img/bike_types_1_mobile.webp 1x, img/bike_types_1_mobile@2x.webp 2x">
+                  <picture>
                     <source media="(max-width: 1023px)"
-                      srcset="img/bike_types_1_tablet.webp 1x, img/bike_types_1_tablet@2x.webp 2x">
+                      srcset="img/bike_types_1_mobile.webp 1x, img/bike_types_1_mobile@2x.webp 2x">
                     <source media="(min-width: 1024px)"
                       srcset="img/bike_types_1_desktop.webp 1x, img/bike_types_1_desktop@2x.webp 2x">
-                    1х: 342px; 2x: 684px -->
-                  <img src="img/bike_types_1_desktop.jpg"
-                    alt="Дорожный велосипед с корзиной у руля, на фоне кирпичной стены" width="342" height="503">
-                  <!-- </picture> -->
+                    <!-- 1х: 342px; 2x: 684px -->
+                    <img src="img/bike_types_1_desktop.jpg"
+                      alt="Дорожный велосипед с корзиной у руля, на фоне кирпичной стены" width="342" height="503">
+                  </picture>
                 </div>
                 <h3>Дорожный велосипед</h3>
               </a>
@@ -94,17 +95,15 @@
             <li class="slider__item slider__item--rectangle">
               <a class="slider__link" href="#">
                 <div class="slider__img-wrapper">
-                  <!-- <picture>
-                    <source media="(max-width: 767px)"
-                      srcset="img/bike_types_2_mobile.webp 1x, img/bike_types_2_mobile@2x.webp 2x">
+                  <picture>
                     <source media="(max-width: 1023px)"
-                      srcset="img/bike_types_2_tablet.webp 1x, img/bike_types_2_tablet@2x.webp 2x">
+                      srcset="img/bike_types_2_mobile.webp 1x, img/bike_types_2_mobile@2x.webp 2x">
                     <source media="(min-width: 1024px)"
                       srcset="img/bike_types_2_desktop.webp 1x, img/bike_types_2_desktop@2x.webp 2x">
-                    1х: 342px; 2x: 684px -->
-                  <img src="img/bike_types_2_desktop.jpg" alt="Горный велосипед на скале на фоне горной гряды" width="342"
-                    height="566">
-                  <!-- </picture> -->
+                    <!-- 1х: 342px; 2x: 684px -->
+                    <img src="img/bike_types_2_desktop.jpg" alt="Горный велосипед на скале на фоне горной гряды"
+                      width="342" height="566">
+                  </picture>
                 </div>
                 <h3>Горный велосипед</h3>
               </a>
@@ -112,18 +111,16 @@
             <li class="slider__item slider__item--circle">
               <a class="slider__link" href="#">
                 <div class="slider__img-wrapper">
-                  <!-- <picture>
-                    <source media="(max-width: 767px)"
-                      srcset="img/bike_types_3_mobile.webp 1x, img/bike_types_3_mobile@2x.webp 2x">
+                  <picture>
                     <source media="(max-width: 1023px)"
-                      srcset="img/bike_types_3_tablet.webp 1x, img/bike_types_3_tablet@2x.webp 2x">
+                      srcset="img/bike_types_3_mobile.webp 1x, img/bike_types_3_mobile@2x.webp 2x">
                     <source media="(min-width: 1024px)"
                       srcset="img/bike_types_3_desktop.webp 1x, img/bike_types_3_desktop@2x.webp 2x">
-                    1х: 342px; 2x: 684px -->
-                  <img src="img/bike_types_3_desktop.jpg"
-                    alt="Детский велосипед с дополнительным сиденьем на багажнике и корзиной у руля розового цвета"
-                    width="342" height="513">
-                  <!-- </picture> -->
+                    <!-- 1х: 342px; 2x: 684px -->
+                    <img src="img/bike_types_3_desktop.jpg"
+                      alt="Детский велосипед с дополнительным сиденьем на багажнике и корзиной у руля розового цвета"
+                      width="342" height="513">
+                  </picture>
                 </div>
                 <h3>Детский велосипед</h3>
               </a>
@@ -132,37 +129,41 @@
         </div>
       </section>
       <section class="video video__container">
-        <div class="container">
-          <div class="video__body">
-            <h2 class="page__title video__title" id="video">Видео про велосипеды</h2>
-            <p>В этом видео мы подробно расскажем про <br class="video__desktop-br">особенности <br class="video__tablet-br">выбора велосипеда для себя.</p>
-            <div class="video__wrapper">
-              <!-- <picture>
-                <source media="(max-width: 767px)" srcset="img/poster_mobile.webp 1x, img/poster_mobile@2x.webp 2x">
-                <source media="(max-width: 1023px)" srcset="img/poster_tablet.webp 1x, img/poster_tablet@2x.webp 2x">
-                <source media="(min-width: 1024px)" srcset="img/poster_desktop.webp 1x, img/poster_desktop@2x.webp 2x">
-                1х: 929px; 2x: 1858px -->
-              <img src="img/video_poster_desktop.jpg" alt="Черный велосипед с изогнутым рулем" width="929" height="522">
-              <!-- </picture> -->
-              <button class="video__button" type="button" aria-label="Запустить видео"></button>
+        <div class="video__container">
+          <div class="container">
+            <div class="video__body">
+              <h2 class="page__title video__title" id="video">Видео про велосипеды</h2>
+              <p>В этом видео мы подробно расскажем про <br class="video__desktop-br">особенности <br
+                  class="video__tablet-br">выбора велосипеда для себя.</p>
+              <div class="video__wrapper">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="img/video_poster_mobile.webp 1x, img/video_poster_mobile@2x.webp 2x">
+                  <source media="(max-width: 1023px)" srcset="img/video_poster_tablet.webp 1x, img/video_poster_tablet@2x.webp 2x">
+                  <source media="(min-width: 1024px)" srcset="img/video_poster_desktop.webp 1x, img/video_poster_desktop@2x.webp 2x">
+                  <!-- 1х: 929px; 2x: 1858px -->
+                  <img src="img/video_poster_desktop.jpg" alt="Черный велосипед с изогнутым рулем" width="929"
+                    height="522">
+                </picture>
+                <button class="video__button" type="button" aria-label="Запустить видео"></button>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section class="contacts">
-        <div class="container">
+        <div class="container contacts__container">
           <h2 class="page__title contacts__title" id="contacts">Как нас найти?</h2>
-          <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая <br class="contacts__desktop-br">Конюшенная, д. 19</p>
+          <p>Мы находимся по адресу: <br class="contacts__mobile-br">Санкт-Петербург, ул. Большая <br
+              class="contacts__desktop-br">Конюшенная, д. 19</p>
           <div class="contacts__map-wrapper">
-            <!-- <picture>
-              <source media="(max-width: 767px)" srcset="img/map_mobile.webp 1x, img/map_mobile@2x.webp 2x">
+            <picture>
               <source media="(max-width: 1023px)" srcset="img/map_tablet.webp 1x, img/map_tablet@2x.webp 2x">
               <source media="(min-width: 1024px)" srcset="img/map_desktop.webp 1x, img/map_desktop@2x.webp 2x">
-              1х: 929px; 2x: 1858px -->
-            <img src="img/map_desktop.jpg"
-              alt="Карта Санкт-Петербурга с указанием местоположения магазина на ул. Большая Конюшенная, д. 19"
-              width="957" height="530">
-            <!-- </picture> -->
+              <!-- 1х: 929px; 2x: 1858px -->
+              <img src="img/map_desktop.jpg"
+                alt="Карта Санкт-Петербурга с указанием местоположения магазина на ул. Большая Конюшенная, д. 19"
+                width="957" height="530">
+            </picture>
           </div>
         </div>
       </section>
