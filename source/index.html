@@ -9,8 +9,8 @@
   <meta name="description" content="Наш магазин отбирает только самые лучшие велосипеды для продажи">
   <meta name="keywords" content="Велосипед, продажа велосипедов, магазин, байк, горный велосипед, детский велосипед">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="../fonts/open-sans-v26-cyrillic-ext-regular.woff" type="font/woff" as="font" crossorigin>
-  <link rel="preload" href="../fonts/open-sans-v26-cyrillic-ext-regular.woff2"type="font/woff2" as="font" crossorigin>
+  <link rel="preload" href="../fonts/open-sans-v26-cyrillic-ext-600.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous">
 </head>
 
 <body class="page">
@@ -53,10 +53,13 @@
               <div class="form__legend">
                 <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
               </div>
-              <div class="form__input"><input type="text" name="name" placeholder="Введите Ваше Имя" required></div>
-              <div class="form__input"><input type="tel" name="tel" placeholder="Введите Ваш номер телефона" required>
+              <div class="form__input"><input type="text" name="name" placeholder="Введите Ваше Имя"
+                  aria-label="Введите Ваше Имя" required></div>
+              <div class="form__input"><input type="tel" name="tel" placeholder="Введите Ваш номер телефона"
+                  aria-label="Введите Ваш номер телефона" required>
               </div>
-              <div class="form__submit"><input type="submit" value="Подобрать велосипед мечты"></div>
+              <div class="form__submit"><input type="submit" value="Подобрать велосипед мечты"
+                  aria-label="Отправить форму обратной связи"></div>
             </form>
           </div>
         </div>
@@ -81,9 +84,7 @@
                 <div class="slider__img-wrapper">
                   <picture>
                     <source media="(max-width: 1023px)"
-                      srcset="img/bike_types_1_mobile.webp 1x, img/bike_types_1_mobile@2x.webp 2x">
-                    <source media="(min-width: 1024px)"
-                      srcset="img/bike_types_1_desktop.webp 1x, img/bike_types_1_desktop@2x.webp 2x">
+                      srcset="img/bike_types_1_tablet.webp 1x, img/bike_types_1_tablet@2x.webp 2x">
                     <!-- 1х: 342px; 2x: 684px -->
                     <img src="img/bike_types_1_desktop.jpg"
                       alt="Дорожный велосипед с корзиной у руля, на фоне кирпичной стены" width="342" height="503">
@@ -97,9 +98,7 @@
                 <div class="slider__img-wrapper">
                   <picture>
                     <source media="(max-width: 1023px)"
-                      srcset="img/bike_types_2_mobile.webp 1x, img/bike_types_2_mobile@2x.webp 2x">
-                    <source media="(min-width: 1024px)"
-                      srcset="img/bike_types_2_desktop.webp 1x, img/bike_types_2_desktop@2x.webp 2x">
+                      srcset="img/bike_types_2_tablet.webp 1x, img/bike_types_2_tablet@2x.webp 2x">
                     <!-- 1х: 342px; 2x: 684px -->
                     <img src="img/bike_types_2_desktop.jpg" alt="Горный велосипед на скале на фоне горной гряды"
                       width="342" height="566">
@@ -113,9 +112,7 @@
                 <div class="slider__img-wrapper">
                   <picture>
                     <source media="(max-width: 1023px)"
-                      srcset="img/bike_types_3_mobile.webp 1x, img/bike_types_3_mobile@2x.webp 2x">
-                    <source media="(min-width: 1024px)"
-                      srcset="img/bike_types_3_desktop.webp 1x, img/bike_types_3_desktop@2x.webp 2x">
+                      srcset="img/bike_types_3_tablet.webp 1x, img/bike_types_3_tablet@2x.webp 2x">
                     <!-- 1х: 342px; 2x: 684px -->
                     <img src="img/bike_types_3_desktop.jpg"
                       alt="Детский велосипед с дополнительным сиденьем на багажнике и корзиной у руля розового цвета"
@@ -137,9 +134,12 @@
                   class="video__tablet-br">выбора велосипеда для себя.</p>
               <div class="video__wrapper">
                 <picture>
-                  <source media="(max-width: 767px)" srcset="img/video_poster_mobile.webp 1x, img/video_poster_mobile@2x.webp 2x">
-                  <source media="(max-width: 1023px)" srcset="img/video_poster_tablet.webp 1x, img/video_poster_tablet@2x.webp 2x">
-                  <source media="(min-width: 1024px)" srcset="img/video_poster_desktop.webp 1x, img/video_poster_desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="img/video_poster_mobile.webp 1x, img/video_poster_mobile@2x.webp 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="img/video_poster_tablet.webp 1x, img/video_poster_tablet@2x.webp 2x">
+                  <source media="(min-width: 1024px)"
+                    srcset="img/video_poster_desktop.webp 1x, img/video_poster_desktop@2x.webp 2x">
                   <!-- 1х: 929px; 2x: 1858px -->
                   <img src="img/video_poster_desktop.jpg" alt="Черный велосипед с изогнутым рулем" width="929"
                     height="522">
@@ -161,7 +161,8 @@
               <source media="(max-width: 1023px)" srcset="img/map_tablet.webp 1x, img/map_tablet@2x.webp 2x">
               <source media="(min-width: 1024px)" srcset="img/map_desktop.webp 1x, img/map_desktop@2x.webp 2x">
               <!-- 1х: 929px; 2x: 1858px -->
-              <img src="img/map_desktop.jpg"
+              <img
+                src="img/map_desktop.jpg"
                 alt="Карта Санкт-Петербурга с указанием местоположения магазина на ул. Большая Конюшенная, д. 19"
                 width="957" height="530">
             </picture>
@@ -179,7 +180,8 @@
       </div>
     </footer>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/vendor.js"></script>
 </body>
 
 </html>
