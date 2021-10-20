@@ -20,7 +20,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 31px;
+    margin-bottom: 30px;
   }
 }
 .about-us__list {
@@ -44,11 +44,11 @@
     row-gap: 39px;
   }
 }
-.about-us__item {
+.about-us li {
   text-align: center;
   letter-spacing: 0.005em;
 }
-.about-us__item {
+.about-us li {
   &::before {
     font-weight: bold;
     font-size: 28px;
@@ -58,23 +58,23 @@
     margin-bottom: 16px;
 
     @media (max-width: $tablet-width) {
-      margin-bottom: 19px;
+      margin-bottom: 18px;
     }
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $mobile-width) {
       margin-bottom: 14px;
     }
   }
 }
-.about-us__item--01::before {
+.about-us li:nth-child(1):before {
   content: "01";
 }
-.about-us__item--02::before {
+.about-us li:nth-child(2):before {
   content: "02";
 }
-.about-us__item--03::before {
+.about-us li:nth-child(3):before {
   content: "03";
 }
-.about-us__item--04::before {
+.about-us li:nth-child(4):before {
   content: "04";
 }

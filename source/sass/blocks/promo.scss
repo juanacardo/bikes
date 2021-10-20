@@ -47,9 +47,9 @@
 
   @media (max-width: $tablet-width) {
     max-width: 100%;
-    padding-top: 21px;
+    padding-top: 24px;
     padding-right: 21px;
-    padding-bottom: 77px;
+    padding-bottom: 78px;
     padding-left: 21px;
     background-color: $promo-background;
     background-image: url("../img/first_screen_tablet.webp");
@@ -63,7 +63,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding-top: 22px;
+    padding-top: 25px;
     padding-right: 17px;
     padding-bottom: 68px;
     padding-left: 17px;
@@ -92,14 +92,14 @@
 }
 .promo__logo {
   display: block;
-  margin-bottom: 21px;
+  margin-bottom: 31px;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 81px;
+    margin-bottom: 90px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 66px;
+    margin-bottom: 76px;
   }
 }
 .promo__title {

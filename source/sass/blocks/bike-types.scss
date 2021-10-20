@@ -4,12 +4,12 @@
   padding-bottom: 147px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 51px;
+    padding-top: 52px;
     padding-bottom: 20px;
   }
 
-  @media (max-width: $tablet-width) {
-    padding-bottom: 11px;
+  @media (max-width: $mobile-width) {
+    padding-bottom: 10px;
   }
 }
 .bike-types__title {
