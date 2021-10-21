@@ -1,15 +1,15 @@
 .about-us {
-  padding-top: 152px;
-  padding-bottom: 148px;
+  padding-top: 150px;
+  padding-bottom: 152px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 20px;
+    padding-top: 19px;
     padding-bottom: 68px;
   }
 
   @media (max-width: $mobile-width) {
-    padding-top: 23px;
-    padding-bottom: 80px;
+    padding-top: 21px;
+    padding-bottom: 81px;
   }
 }
 .about-us__title {
@@ -32,6 +32,7 @@
   @media (max-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
+    column-gap: 39px;
     padding-right: 71px;
     padding-left: 71px;
   }

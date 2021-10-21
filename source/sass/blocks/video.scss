@@ -10,14 +10,14 @@
   }
 }
 .video__body {
-  padding-top: 123px;
+  padding-top: 122px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 67px;
+    padding-top: 66px;
   }
 
   @media (max-width: $mobile-width) {
-    padding-top: 80px;
+    padding-top: 79px;
   }
 }
 .video__title {
@@ -29,7 +29,7 @@
   line-height: 28px;
   color: rgba($white, 0.7);
   text-align: center;
-  margin-top: 18px;
+  margin-top: 20px;
   margin-bottom: 57px;
 
   @media (max-width: $tablet-width) {
@@ -38,7 +38,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 50px;
+    margin-bottom: 51px;
   }
 }
 .video__wrapper {

@@ -1,6 +1,6 @@
 .bike-types {
   background-color: $background-light;
-  padding-top: 154px;
+  padding-top: 150px;
   padding-bottom: 147px;
 
   @media (max-width: $tablet-width) {
@@ -9,13 +9,13 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding-bottom: 10px;
+    padding-bottom: 12px;
   }
 }
 .bike-types__title {
-  margin-bottom: 49px;
+  margin-bottom: 50px;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 29px;
+    margin-bottom: 30px;
   }
 }

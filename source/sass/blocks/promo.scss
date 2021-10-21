@@ -2,7 +2,7 @@
   box-sizing: border-box;
   min-height: 825px;
   padding-top: 63px;
-  padding-bottom: 240px;
+  padding-bottom: 241px;
   display: flex;
   background-color: $promo-background;
   background-image: url("../img/first_screen_desktop.webp");
@@ -79,7 +79,7 @@
   width: 327px;
 
   @media (max-width: $tablet-width) {
-    width: 321px;
+    width: 324px;
     margin: 0 auto;
     padding-top: 71px;
   }
@@ -106,7 +106,6 @@
   font-weight: bold;
   font-size: 46px;
   line-height: 64px;
-  letter-spacing: .035em;
   color: $white;
   margin-top: 0;
   margin-bottom: 23px;
@@ -115,8 +114,11 @@
     font-size: 30px;
     line-height: 42px;
     text-align: center;
-    letter-spacing: .03em;
     margin-bottom: 21px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
   }
 }
 .promo p {
