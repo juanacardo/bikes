@@ -28,6 +28,7 @@
   grid-template-columns: repeat(4, 1fr);
   row-gap: 40px;
   column-gap: 40px;
+  counter-reset: myCounter;
 
   @media (max-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
@@ -47,10 +48,11 @@
 }
 .about-us li {
   text-align: center;
-  letter-spacing: 0.005em;
 }
 .about-us li {
   &::before {
+    counter-increment: myCounter;
+    content: counter(myCounter, decimal-leading-zero);
     font-weight: bold;
     font-size: 28px;
     line-height: 38px;
@@ -67,15 +69,15 @@
     }
   }
 }
-.about-us li:nth-child(1):before {
-  content: "01";
-}
-.about-us li:nth-child(2):before {
-  content: "02";
-}
-.about-us li:nth-child(3):before {
-  content: "03";
-}
-.about-us li:nth-child(4):before {
-  content: "04";
-}
+// .about-us li:nth-child(1):before {
+//   content: "01";
+// }
+// .about-us li:nth-child(2):before {
+//   content: "02";
+// }
+// .about-us li:nth-child(3):before {
+//   content: "03";
+// }
+// .about-us li:nth-child(4):before {
+//   content: "04";
+// }

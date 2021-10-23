@@ -16,21 +16,26 @@
   @media (max-width: $mobile-width) {
     padding-right: 10px;
     padding-left: 10px;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .slider__item {
   position: relative;
+  max-width: 342px;
 
   @media (max-width: $tablet-width) {
     padding-right: 25px;
     padding-left: 25px;
     margin-bottom: 49px;
     width: 50%;
+    max-width: 320px;
     box-sizing: border-box;
   }
 
   @media (max-width: $mobile-width) {
     width: 100%;
+    max-width: 270px;
     padding-right: 0;
     padding-left: 0;
     margin-bottom: 41px;
@@ -65,8 +70,8 @@
   }
 }
 .slider__img-wrapper {
-  border-radius: 10px;
   position: relative;
+  z-index: 2;
 
   @media (max-width: $tablet-width) {
     height: 300px;
@@ -74,6 +79,8 @@
   }
 }
 .slider img {
+  border-radius: 10px;
+
   @media (max-width: $tablet-width) {
     width: 100%;
     height: 100%;
@@ -125,7 +132,7 @@
   width: 47px;
   height: 47px;
   background-image: url("../img/rectangle.svg");
-  z-index: 1;
+  z-index: 3;
 
   @media (max-width: $tablet-width) {
     display: none;
@@ -139,7 +146,7 @@
   width: 47px;
   height: 47px;
   background-image: url("../img/rectangle.svg");
-  z-index: 1;
+  z-index: 3;
 
   @media (max-width: $tablet-width) {
     display: none;
@@ -154,7 +161,7 @@
   height: 95px;
   background-image: url("../img/circle.svg");
   background-size: contain;
-  z-index: 1;
+  z-index: 3;
 
   @media (max-width: $tablet-width) {
     width: 68px;

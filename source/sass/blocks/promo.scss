@@ -1,17 +1,16 @@
 .promo {
   box-sizing: border-box;
-  min-height: 825px;
-  padding-top: 63px;
+  padding-top: 317px;
   padding-bottom: 241px;
   display: flex;
   background-color: $promo-background;
-  background-image: url("../img/first_screen_desktop.webp");
+  background-image: url("../img/first_screen_desktop.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/first_screen_desktop@2x.webp");
+    background-image: url("../img/first_screen_desktop@2x.jpg");
   }
 
   @media (max-width: $tablet-width) {
@@ -28,7 +27,6 @@
   padding-right: 20px;
   padding-left: 20px;
   display: flex;
-  align-items: flex-end;
   gap: 20px;
 
   @media (max-width: $tablet-width) {
@@ -52,13 +50,13 @@
     padding-bottom: 78px;
     padding-left: 21px;
     background-color: $promo-background;
-    background-image: url("../img/first_screen_tablet.webp");
+    background-image: url("../img/first_screen_tablet.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/first_screen_tablet@2x.webp");
+      background-image: url("../img/first_screen_tablet@2x.jpg");
     }
   }
 
@@ -68,15 +66,16 @@
     padding-bottom: 68px;
     padding-left: 17px;
     background-size: cover;
-    background-image: url("../img/first_screen_mobile.webp");
+    background-image: url("../img/first_screen_mobile.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/first_screen_mobile@2x.webp");
+      background-image: url("../img/first_screen_mobile@2x.jpg");
     }
   }
 }
 .promo__form-wrapper {
   width: 327px;
+  padding-top: 6px;
 
   @media (max-width: $tablet-width) {
     width: 324px;

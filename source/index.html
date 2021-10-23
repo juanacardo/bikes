@@ -37,7 +37,7 @@
 
     </header>
 
-    <main>
+    <main class="page__main">
       <section class="promo">
         <div class="promo__body">
           <div class="promo__text-wrapper">
@@ -70,12 +70,12 @@
       <section class="about-us">
         <div class="container">
           <h2 class="page__title about-us__title" id="about-us">Несколько фактов о нас</h2>
-          <ul class="about-us__list clear-list">
+          <ol class="about-us__list clear-list">
             <li>Самый широкий выбор велосипедов!</li>
             <li>Доставка велосипедов по всей России!</li>
             <li>Большой выбор крутых аксессуаров!</li>
             <li>Профессиональные консультации!</li>
-          </ul>
+          </ol>
         </div>
       </section>
       <section class="bike-types">
@@ -87,7 +87,8 @@
                 <div class="slider__img-wrapper">
                   <picture>
                     <source media="(max-width: 1023px)"
-                      srcset="img/bike_types_1_tablet.webp 1x, img/bike_types_1_tablet@2x.webp 2x">
+                      srcset="img/bike_types_1_tablet.webp 1x, img/bike_types_1_tablet@2x.webp 2x" type="image/webp">
+                      <source media="(min-width: 1024px)" srcset="img/bike_types_1_desktop.webp 1x, img/bike_types_1_desktop@2x.webp 2x" type="image/webp">
                     <!-- 1х: 342px; 2x: 684px -->
                     <img src="img/bike_types_1_desktop.jpg"
                       alt="Дорожный велосипед с корзиной у руля, на фоне кирпичной стены" width="342" height="503">
@@ -101,7 +102,8 @@
                 <div class="slider__img-wrapper">
                   <picture>
                     <source media="(max-width: 1023px)"
-                      srcset="img/bike_types_2_tablet.webp 1x, img/bike_types_2_tablet@2x.webp 2x">
+                      srcset="img/bike_types_2_tablet.webp 1x, img/bike_types_2_tablet@2x.webp 2x" type="image/webp">
+                      <source media="(min-width: 1024px)" srcset="img/bike_types_2_desktop.webp 1x, img/bike_types_2_desktop@2x.webp 2x" type="image/webp">
                     <!-- 1х: 342px; 2x: 684px -->
                     <img src="img/bike_types_2_desktop.jpg" alt="Горный велосипед на скале на фоне горной гряды"
                       width="342" height="566">
@@ -115,7 +117,8 @@
                 <div class="slider__img-wrapper">
                   <picture>
                     <source media="(max-width: 1023px)"
-                      srcset="img/bike_types_3_tablet.webp 1x, img/bike_types_3_tablet@2x.webp 2x">
+                      srcset="img/bike_types_3_tablet.webp 1x, img/bike_types_3_tablet@2x.webp 2x" type="image/webp">
+                      <source media="(min-width: 1024px)" srcset="img/bike_types_3_desktop.webp 1x, img/bike_types_3_desktop@2x.webp 2x" type="image/webp">
                     <!-- 1х: 342px; 2x: 684px -->
                     <img src="img/bike_types_3_desktop.jpg"
                       alt="Детский велосипед с дополнительным сиденьем на багажнике и корзиной у руля розового цвета"
@@ -149,9 +152,9 @@
               class="contacts__desktop-br">Конюшенная, д. 19</p>
           <div class="contacts__map-wrapper">
             <picture>
-              <source media="(max-width: 767px)" srcset="img/map_mobile.webp 1x, img/map_mobile@2x.webp 2x">
-              <source media="(max-width: 1023px)" srcset="img/map_tablet.webp 1x, img/map_tablet@2x.webp 2x">
-              <source media="(min-width: 1024px)" srcset="img/map_desktop.webp 1x, img/map_desktop@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/map_mobile.webp 1x, img/map_mobile@2x.webp 2x" type="image/webp">
+              <source media="(max-width: 1023px)" srcset="img/map_tablet.webp 1x, img/map_tablet@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/map_desktop.webp 1x, img/map_desktop@2x.webp 2x" type="image/webp">
               <!-- 1х: 929px; 2x: 1858px -->
               <img src="img/map_desktop.jpg"
                 alt="Карта Санкт-Петербурга с указанием местоположения магазина на ул. Большая Конюшенная, д. 19"
