@@ -94,6 +94,12 @@
     display: none;
   }
 }
+.main-navigation--opened {
+  @media (max-width: $tablet-width) {
+    height: 100vh;
+    overflow: auto;
+  }
+}
 .main-navigation--opened .main-navigation__toggle::before,
 .main-navigation--opened .main-navigation__toggle::after {
   @media (max-width: $tablet-width) {

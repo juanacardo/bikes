@@ -15,8 +15,17 @@
     padding-left: 0;
   }
 }
-.contacts__title {
+.contacts__body {
+  max-width: 957px;
+  width: 82%;
+  margin: 0 auto;
 
+  @media (max-width: $tablet-width) {
+    max-width: 698px;
+    width: 100%;
+  }
+}
+.contacts__title {
   @media (max-width: $mobile-width) {
     font-size: 18px;
     line-height: 30px;

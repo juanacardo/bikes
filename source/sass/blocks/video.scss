@@ -11,13 +11,19 @@
 }
 .video__body {
   padding-top: 122px;
+  max-width: 929px;
+  width: 80%;
+  margin: 0 auto;
 
   @media (max-width: $tablet-width) {
     padding-top: 66px;
+    width: 72%;
+    max-width: 503px;
   }
 
   @media (max-width: $mobile-width) {
     padding-top: 79px;
+    width: 100%;
   }
 }
 .video__title {
@@ -42,10 +48,7 @@
   }
 }
 .video__wrapper {
-  max-width: 929px;
-  width: 80%;
   min-height: 520px;
-  margin: 0 auto;
   position: relative;
   background-color: $promo-background;
   background-image: url("../img/video_poster_desktop.jpg");
@@ -58,8 +61,6 @@
   }
 
   @media (max-width: $tablet-width) {
-    width: 72%;
-    max-width: 288px;
     min-height: 282px;
     background-image: url("../img/video_poster_tablet.jpg");
 
@@ -69,7 +70,6 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 100%;
     min-height: 162px;
     background-image: url("../img/video_poster_mobile.jpg");
 
