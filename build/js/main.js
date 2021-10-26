@@ -1,6 +1,7 @@
 'use strict';
 var page = document.querySelector('.page');
 var navigationMenu = document.querySelector('.main-navigation');
+var navigationLinks = document.querySelectorAll('.main-navigation__link');
 var navToggle = navigationMenu.querySelector('.main-navigation__toggle');
 var telInput = document.querySelector('#tel-input');
 var nameInput = document.querySelector('#name-input');
@@ -28,6 +29,18 @@ navToggle.addEventListener('click', function () {
     navigationMenu.classList.remove('main-navigation--opened');
     page.classList.remove('blocked');
   }
+});
+
+navigationLinks.forEach(function (element) {
+  element.addEventListener('click', function () {
+    if (document.body.classList.contains('blocked')) {
+      document.body.classList.remove('blocked');
+    }
+    if (navigationMenu.classList.contains('main-navigation--opened')) {
+      navigationMenu.classList.remove('main-navigation--opened');
+      navigationMenu.classList.add('main-navigation--closed');
+    }
+  });
 });
 
 // Функция визульного отображения ошибки валидации

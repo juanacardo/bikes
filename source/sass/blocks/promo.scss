@@ -27,14 +27,12 @@
   padding-right: 20px;
   padding-left: 20px;
   display: flex;
-  gap: 20px;
 
   @media (max-width: $tablet-width) {
     max-width: 100%;
     width: 100%;
     padding-right: 0;
     padding-left: 0;
-    gap: 0;
     flex-direction: column;
     align-items: stretch;
   }
@@ -42,9 +40,11 @@
 .promo__text-wrapper {
   flex-grow: 1;
   max-width: 532px;
+  margin-right: 20px;
 
   @media (max-width: $tablet-width) {
     max-width: 100%;
+    margin-right: 0;
     padding-top: 24px;
     padding-right: 21px;
     padding-bottom: 78px;

@@ -4,11 +4,9 @@
   flex-wrap: wrap;
   padding-right: 20px;
   padding-left: 20px;
-  gap: 50px;
 
   @media (max-width: $tablet-width) {
     justify-content: center;
-    gap: 0;
     padding-right: 29px;
     padding-left: 29px;
   }
@@ -23,8 +21,10 @@
 .slider__item {
   position: relative;
   max-width: 342px;
+  margin-right: 50px;
 
   @media (max-width: $tablet-width) {
+    margin-right: 0;
     padding-right: 25px;
     padding-left: 25px;
     margin-bottom: 49px;
@@ -40,6 +40,9 @@
     padding-left: 0;
     margin-bottom: 41px;
   }
+}
+.slider__item:nth-of-type(3n) {
+  margin-right: 0;
 }
 .slider__link {
   text-decoration: none;
